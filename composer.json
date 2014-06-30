@@ -1,0 +1,13 @@
+{
+    "name": "root/carbine",
+    "require": {
+        "swaroopsm/tower": "0.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Swaroop SM",
+            "email": "swaroop.striker@gmail.com"
+        }
+    ]
+}
