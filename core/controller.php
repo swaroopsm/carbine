@@ -9,10 +9,6 @@ abstract class Controller {
     $this->setLayout('default');
   }
 
-  public function input() {
-    return $_POST;
-  }
-
   public function setNamedRoutes($router) {
     $this->view->set('router', $router);
   }
@@ -30,6 +26,7 @@ abstract class Controller {
   public function setRouteParams($params) {
     $this->routeParams = $params;
     $this->input->setGetParams($this->routeParams['params']);
+    $this->input->setPostParams($_POST);
   }
 
   public function getView() {
